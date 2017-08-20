@@ -23,7 +23,7 @@ namespace AutoLogin.Model
 
         public bool Execute(string user,string pwd)
         {
-            string loginUrl = "http://202.114.74.218/web3/login.aspx";
+            string loginUrl = "http://202.114.74.218/web/login.aspx";
             string loginData = "uid=******&pwd=******";
             CookieContainer cookies = new CookieContainer();
             string loginResult = HttpPost(loginUrl, loginData, cookies);
